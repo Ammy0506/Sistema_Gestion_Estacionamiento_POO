@@ -1,0 +1,190 @@
+
+====================================================
+ SISTEMA DE GESTIÓN Y CONTROL DE ESTACIONAMIENTO
+====================================================
+1. Gestión de vehículos
+2. Operaciones del estacionamiento
+3. Consultas y reportes
+4. Salir del sistema
+Seleccione un módulo: 
+--- MÓDULO: GESTIÓN DE VEHÍCULOS ---
+1. Registrar vehículo
+2. Consultar vehículos registrados
+3. Volver al menú principal
+Seleccione una opción: 
+--- VEHÍCULOS REGISTRADOS ---
+1. Tipo: Automóvil | Placa: ABC-123 | Marca: Toyota | Color: Rojo
+2. Tipo: Motocicleta | Placa: XYZ-987 | Marca: Yamaha | Color: Negro
+Total registrados: 2
+
+--- MÓDULO: GESTIÓN DE VEHÍCULOS ---
+1. Registrar vehículo
+2. Consultar vehículos registrados
+3. Volver al menú principal
+Seleccione una opción: 
+Tipo de vehículo:
+1. Automóvil
+2. Motocicleta
+3. Camioneta
+Seleccione el tipo: Placa: Marca: Color: Vehículo registrado correctamente: Tipo: Camioneta | Placa: TST-001 | Marca: Chevrolet | Color: Gris
+
+--- MÓDULO: GESTIÓN DE VEHÍCULOS ---
+1. Registrar vehículo
+2. Consultar vehículos registrados
+3. Volver al menú principal
+Seleccione una opción: 
+--- VEHÍCULOS REGISTRADOS ---
+1. Tipo: Automóvil | Placa: ABC-123 | Marca: Toyota | Color: Rojo
+2. Tipo: Motocicleta | Placa: XYZ-987 | Marca: Yamaha | Color: Negro
+3. Tipo: Camioneta | Placa: TST-001 | Marca: Chevrolet | Color: Gris
+Total registrados: 3
+
+--- MÓDULO: GESTIÓN DE VEHÍCULOS ---
+1. Registrar vehículo
+2. Consultar vehículos registrados
+3. Volver al menú principal
+Seleccione una opción: 
+====================================================
+ SISTEMA DE GESTIÓN Y CONTROL DE ESTACIONAMIENTO
+====================================================
+1. Gestión de vehículos
+2. Operaciones del estacionamiento
+3. Consultas y reportes
+4. Salir del sistema
+Seleccione un módulo: 
+--- MÓDULO: OPERACIONES DEL ESTACIONAMIENTO ---
+1. Registrar entrada de vehículo
+2. Registrar salida y calcular tarifa
+3. Volver al menú principal
+Seleccione una opción: Ingrese la placa del vehículo: Entrada registrada correctamente.
+Vehículo: Automóvil | Placa: ABC-123
+Espacio asignado: A-1
+Fecha y hora de entrada: 30/10/2026 13:42:22
+
+--- MÓDULO: OPERACIONES DEL ESTACIONAMIENTO ---
+1. Registrar entrada de vehículo
+2. Registrar salida y calcular tarifa
+3. Volver al menú principal
+Seleccione una opción: 
+====================================================
+ SISTEMA DE GESTIÓN Y CONTROL DE ESTACIONAMIENTO
+====================================================
+1. Gestión de vehículos
+2. Operaciones del estacionamiento
+3. Consultas y reportes
+4. Salir del sistema
+Seleccione un módulo: 
+--- MÓDULO: CONSULTAS Y REPORTES ---
+1. Consultar espacios libres y ocupados
+2. Consultar estancias activas
+3. Consultar historial de estancias finalizadas
+4. Consultar resumen de recaudación
+5. Volver al menú principal
+Seleccione una opción: 
+--- ESTADO DE LOS ESPACIOS ---
+Zona A:
+  Espacio A-1 [OCUPADO por ABC-123]
+  Espacio A-2 [LIBRE]
+  Espacio A-3 [LIBRE]
+  Espacio A-4 [LIBRE]
+  Espacio A-5 [LIBRE]
+Zona B:
+  Espacio B-1 [LIBRE]
+  Espacio B-2 [LIBRE]
+  Espacio B-3 [LIBRE]
+  Espacio B-4 [LIBRE]
+  Espacio B-5 [LIBRE]
+Total disponibles: 9
+Total ocupados: 1
+Capacidad total: 10
+
+--- MÓDULO: CONSULTAS Y REPORTES ---
+1. Consultar espacios libres y ocupados
+2. Consultar estancias activas
+3. Consultar historial de estancias finalizadas
+4. Consultar resumen de recaudación
+5. Volver al menú principal
+Seleccione una opción: 
+--- ESTANCIAS ACTIVAS ---
+Automóvil | Placa: ABC-123 | Espacio: A-1 | Entrada: 30/10/2026 13:42:22
+Total de estancias activas: 1
+
+--- MÓDULO: CONSULTAS Y REPORTES ---
+1. Consultar espacios libres y ocupados
+2. Consultar estancias activas
+3. Consultar historial de estancias finalizadas
+4. Consultar resumen de recaudación
+5. Volver al menú principal
+Seleccione una opción: 
+====================================================
+ SISTEMA DE GESTIÓN Y CONTROL DE ESTACIONAMIENTO
+====================================================
+1. Gestión de vehículos
+2. Operaciones del estacionamiento
+3. Consultas y reportes
+4. Salir del sistema
+Seleccione un módulo: 
+--- MÓDULO: OPERACIONES DEL ESTACIONAMIENTO ---
+1. Registrar entrada de vehículo
+2. Registrar salida y calcular tarifa
+3. Volver al menú principal
+Seleccione una opción: Ingrese la placa del vehículo: Salida registrada correctamente.
+Vehículo: Automóvil | Placa: ABC-123
+Espacio liberado: A-1
+Entrada: 30/10/2026 13:42:22
+Salida: 30/10/2026 13:42:22
+Permanencia facturada: 1 minuto(s)
+Total a pagar: $1.00
+
+--- MÓDULO: OPERACIONES DEL ESTACIONAMIENTO ---
+1. Registrar entrada de vehículo
+2. Registrar salida y calcular tarifa
+3. Volver al menú principal
+Seleccione una opción: 
+====================================================
+ SISTEMA DE GESTIÓN Y CONTROL DE ESTACIONAMIENTO
+====================================================
+1. Gestión de vehículos
+2. Operaciones del estacionamiento
+3. Consultas y reportes
+4. Salir del sistema
+Seleccione un módulo: 
+--- MÓDULO: CONSULTAS Y REPORTES ---
+1. Consultar espacios libres y ocupados
+2. Consultar estancias activas
+3. Consultar historial de estancias finalizadas
+4. Consultar resumen de recaudación
+5. Volver al menú principal
+Seleccione una opción: 
+--- HISTORIAL DE ESTANCIAS FINALIZADAS ---
+Placa: ABC-123 | Tipo: Automóvil | Entrada: 30/10/2026 13:42:22 | Salida: 30/10/2026 13:42:22 | Minutos: 1 | Cobro: $1.00
+Total de estancias finalizadas: 1
+
+--- MÓDULO: CONSULTAS Y REPORTES ---
+1. Consultar espacios libres y ocupados
+2. Consultar estancias activas
+3. Consultar historial de estancias finalizadas
+4. Consultar resumen de recaudación
+5. Volver al menú principal
+Seleccione una opción: 
+--- RESUMEN DE RECAUDACIÓN ---
+Estancias finalizadas: 1
+Estancias activas: 0
+Total recaudado en esta ejecución: $1.00
+
+--- MÓDULO: CONSULTAS Y REPORTES ---
+1. Consultar espacios libres y ocupados
+2. Consultar estancias activas
+3. Consultar historial de estancias finalizadas
+4. Consultar resumen de recaudación
+5. Volver al menú principal
+Seleccione una opción: 
+====================================================
+ SISTEMA DE GESTIÓN Y CONTROL DE ESTACIONAMIENTO
+====================================================
+1. Gestión de vehículos
+2. Operaciones del estacionamiento
+3. Consultas y reportes
+4. Salir del sistema
+Seleccione un módulo: Gracias por utilizar el Sistema de Gestión y Control de Estacionamiento.
+Los datos se eliminarán al cerrar el programa, porque se mantienen solo en memoria.

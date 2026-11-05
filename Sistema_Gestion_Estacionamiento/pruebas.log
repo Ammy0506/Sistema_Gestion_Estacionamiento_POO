@@ -1,0 +1,62 @@
+[OK] Automóvil: 60 minutos = $1.00
+[OK] Automóvil: 61 minutos = $1.50
+[OK] Automóvil: 121 minutos = $2.00
+[OK] Motocicleta: 60 minutos = $0.50
+[OK] Motocicleta: 61 minutos = $0.75
+[OK] Motocicleta: 121 minutos = $1.00
+[OK] Camioneta: 60 minutos = $1.50
+[OK] Camioneta: 61 minutos = $2.25
+[OK] Camioneta: 121 minutos = $3.00
+[OK] Cero minutos no genera cobro
+[OK] Minutos negativos no generan cobro
+[OK] Una permanencia positiva de un segundo cobra hora mínima
+[OK] Una permanencia de 60 minutos y un segundo cobra dos horas
+[OK] Fecha nula no genera cobro
+[OK] Salida igual a entrada no genera cobro
+[OK] Se cargan dos vehículos demostrativos
+[OK] La placa se normaliza a mayúsculas y sin espacios
+[OK] No se permite una placa duplicada aunque cambie el tipo
+[OK] No se permite placa vacía
+[OK] No se permite marca vacía
+[OK] No se permite color vacío
+[OK] equals compara vehículos por placa entre subclases
+[OK] hashCode es coherente con equals
+[OK] La matriz contiene dos zonas y cinco espacios por zona
+[OK] La capacidad total es de diez espacios
+[OK] Los diez espacios inician libres
+[OK] No se registra entrada de una placa desconocida
+[OK] La entrada asigna el primer espacio A-1
+[OK] Al ingresar un vehículo el espacio queda ocupado
+[OK] La estancia aparece en la consulta de activas
+[OK] No se admite una segunda estancia activa para la misma placa
+[OK] No se admite salida antes de la entrada
+[OK] No se admite salida con la misma hora de entrada
+[OK] Las salidas inválidas no cierran la estancia
+[OK] La salida válida devuelve la estancia finalizada
+[OK] La estancia de 61 minutos cobra dos horas de automóvil
+[OK] La salida libera el espacio asignado
+[OK] La estancia finalizada pasa al historial
+[OK] La estancia cerrada ya no aparece como activa
+[OK] La recaudación acumulada coincide con el cobro
+[OK] No se puede cerrar dos veces una misma estancia
+[OK] Un vehículo puede ingresar de nuevo después de cerrar su estancia
+[OK] El reingreso queda en el siguiente espacio libre disponible
+[OK] Ingreso número 1 ocupa un espacio
+[OK] Ingreso número 2 ocupa un espacio
+[OK] Ingreso número 3 ocupa un espacio
+[OK] Ingreso número 4 ocupa un espacio
+[OK] Ingreso número 5 ocupa un espacio
+[OK] Ingreso número 6 ocupa un espacio
+[OK] Ingreso número 7 ocupa un espacio
+[OK] Ingreso número 8 ocupa un espacio
+[OK] Ingreso número 9 ocupa un espacio
+[OK] Ingreso número 10 ocupa un espacio
+[OK] Los diez espacios quedan ocupados
+[OK] El sistema rechaza el ingreso cuando la matriz está llena
+[OK] El número de espacios ocupados no supera diez
+[OK] El catálogo admite hasta cien vehículos incluyendo los dos precargados
+[OK] El catálogo rechaza un vehículo cuando alcanza cien registros
+
+============================================
+RESULTADO: 58 aprobadas | 0 fallidas
+============================================

@@ -1,0 +1,44 @@
+digraph Estacionamiento {
+  graph [rankdir=TB, splines=ortho, nodesep=0.35, ranksep=0.55, bgcolor="white", fontname="Arial", label="MODELO DE CLASES - SISTEMA DE ESTACIONAMIENTO", labelloc=t, fontsize=20];
+  node [shape=record, style="rounded,filled", fillcolor="#F4F8FF", color="#164A8A", fontname="Arial", fontsize=10, margin="0.10,0.08"];
+  edge [fontname="Arial", fontsize=9, color="#444444", arrowsize=0.8];
+
+  Tarificable [label="{INTERFAZ Tarificable|+calcularTarifa(minutos: long): Double}", fillcolor="#EAF4EA", color="#3A7D44"];
+  Vehiculo [label="{ABSTRACTA Vehiculo|- placa: String\l- marca: String\l- color: String\l|+getPlaca(): String\l+getTipo(): String\l+calcularTarifa(minutos: long): Double\l+calcularTarifa(entrada: LocalDateTime, salida: LocalDateTime): Double\l+equals(objeto: Object): boolean\l+hashCode(): int\l}"];
+  Automovil [label="{Automovil|- PRIMERA_HORA: Double\l- HORA_ADICIONAL: Double\l|+calcularTarifa(minutos: long): Double\l}"];
+  Motocicleta [label="{Motocicleta|- PRIMERA_HORA: Double\l- HORA_ADICIONAL: Double\l|+calcularTarifa(minutos: long): Double\l}"];
+  Camioneta [label="{Camioneta|- PRIMERA_HORA: Double\l- HORA_ADICIONAL: Double\l|+calcularTarifa(minutos: long): Double\l}"];
+  Espacio [label="{EspacioEstacionamiento|- codigo: String\l- vehiculoActual: Vehiculo\l|+isDisponible(): boolean\l+ocupar(vehiculo): boolean\l+liberar(vehiculo): boolean\l}"];
+  Registro [label="{RegistroEstacionamiento|- vehiculo: Vehiculo\l- espacio: EspacioEstacionamiento\l- horaEntrada: LocalDateTime\l- horaSalida: LocalDateTime\l- cobroTotal: Double\l|+isActiva(): boolean\l+getMinutosPermanencia(): long\l+finalizarEstancia(salida): boolean\l}"];
+  GV [label="{GestorVehiculos|- vehiculosRegistrados: Vehiculo[100]\l- contadorVehiculos: int\l|+registrarVehiculo(vehiculo): boolean\l+buscarVehiculo(placa): Vehiculo\l+obtenerVehiculosRegistrados(): Vehiculo[]\l}", fillcolor="#FFF7E8", color="#A66A00"];
+  GE [label="{GestorEspacios|- matrizZonas: EspacioEstacionamiento[2][5]\l|+buscarEspacioDisponible(): EspacioEstacionamiento\l+obtenerMatrizZonas(): EspacioEstacionamiento[][]\l}", fillcolor="#FFF7E8", color="#A66A00"];
+  GReg [label="{GestorEstancias|- gestorVehiculos: GestorVehiculos\l- gestorEspacios: GestorEspacios\l- registrosEstacionamiento: ArrayList de RegistroEstacionamiento\l|+registrarEntrada(placa): RegistroEstacionamiento\l+registrarSalida(placa): RegistroEstacionamiento\l+obtenerEstanciasActivas(): ArrayList\l+obtenerHistorial(): ArrayList\l+getTotalRecaudado(): Double\l}", fillcolor="#FFF7E8", color="#A66A00"];
+  MV [label="{MenuVehiculos|+iniciar(): void}", fillcolor="#F2F2F2", color="#666666"];
+  MO [label="{MenuOperaciones|+iniciar(): void}", fillcolor="#F2F2F2", color="#666666"];
+  MC [label="{MenuConsultas|+iniciar(): void}", fillcolor="#F2F2F2", color="#666666"];
+  MP [label="{MenuPrincipal|+iniciar(): void}", fillcolor="#F2F2F2", color="#666666"];
+  Main [label="{Main|+main(args: String[]): void}", fillcolor="#E8EEF8", color="#164A8A"];
+
+  Vehiculo -> Tarificable [arrowhead=empty, style=dashed, label="implementa"];
+  Automovil -> Vehiculo [arrowhead=empty, label="hereda"];
+  Motocicleta -> Vehiculo [arrowhead=empty, label="hereda"];
+  Camioneta -> Vehiculo [arrowhead=empty, label="hereda"];
+  Registro -> Vehiculo [arrowhead=vee, label="referencia 1"];
+  Registro -> Espacio [arrowhead=vee, label="referencia 1"];
+  Espacio -> Vehiculo [arrowhead=vee, label="0..1 actual"];
+  GV -> Vehiculo [arrowhead=odiamond, label="arreglo 0..100"];
+  GE -> Espacio [arrowhead=odiamond, label="matriz 2x5"];
+  GReg -> Registro [arrowhead=odiamond, label="ArrayList"];
+  GReg -> GV [arrowhead=vee, label="usa"];
+  GReg -> GE [arrowhead=vee, label="usa"];
+  MV -> GV [arrowhead=vee, label="usa"];
+  MO -> GReg [arrowhead=vee, label="usa"];
+  MC -> GE [arrowhead=vee, label="consulta"];
+  MC -> GReg [arrowhead=vee, label="consulta"];
+  MP -> MV [arrowhead=vee]; MP -> MO [arrowhead=vee]; MP -> MC [arrowhead=vee];
+  Main -> MP [arrowhead=vee, label="inicia"];
+
+  {rank=same; Automovil; Motocicleta; Camioneta}
+  {rank=same; GV; GE; GReg}
+  {rank=same; MV; MO; MC}
+}
